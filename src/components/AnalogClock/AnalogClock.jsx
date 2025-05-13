@@ -1,6 +1,5 @@
 import React from "react";
 import "./AnalogClock.css";
-import { useState, useEffect } from "react";
 
 const AnalogClock = ({ testTime }) => {
   const time = testTime ? new Date(testTime) : new Date();

@@ -28,7 +28,7 @@ const EnergyBar = ({ testTime = null }) => {
     updateEnergy();
     const interval = setInterval(updateEnergy, 60000);
     return () => clearInterval(interval);
-  }, []);
+  }, [testTime]);
 
   return (
     <div className="energy-bar">
